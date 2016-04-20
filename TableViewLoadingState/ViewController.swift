@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UITableViewController {
 
-    var tableState = TableState<String>.Loading {
+    var tableState = TableState<String>.Items(["One", "Two", "Three"]) {
         didSet {
             tableView.reloadData()
         }
